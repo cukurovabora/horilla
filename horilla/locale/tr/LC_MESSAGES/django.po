@@ -4454,7 +4454,7 @@ msgstr "Bu alan gerekli"
 #: .\attendance\forms.py:372
 #, python-format
 msgid "Attendance for the date is already exist for %(emp)s"
-msgstr "Tarih için varlık halihazırda %(EMP)"
+msgstr "Tarih için varlık halihazırda %(emp)s"
 
 #: .\attendance\forms.py:377 .\base\forms.py:1035
 msgid "Employee not chosen"
@@ -6087,7 +6087,7 @@ msgstr "Onaylanmış varlık yok."
 #, python-format
 msgid ""
 "The attendances for this employee in %(month_name)s has not been validated."
-msgstr "Bu çalışanın %(ay_adı) tutumları doğrulanmamıştır."
+msgstr "Bu çalışanın %(month_name) tutumları doğrulanmamıştır."
 
 #: .\attendance\templates\attendance\attendance_account\attendance_account_export_filter.html:103
 #: .\attendance\templates\attendance\attendance_account\attendance_account_filter.html:80
@@ -6555,7 +6555,7 @@ msgstr "Önde günler aşınma"
 #: .\attendance\templates\attendance\penalty\form.html:94
 #: .\leave\templates\leave\leave_request\penalty\form.html:64
 msgid "Leave type is optional when 'minus leave' is 0"
-msgstr ""Eksi Tatil" 0 olduğunda orijinal tip isteğe bağlıdır"
+msgstr "'Eksi Tatil' 0 olduğunda orijinal tip isteğe bağlıdır"
 
 #: .\attendance\templates\attendance\penalty\form.html:97
 #: .\leave\templates\leave\leave_request\penalty\form.html:67
@@ -6980,7 +6980,7 @@ msgstr "Silinmiş varlık"
 #: .\attendance\views.py:456
 #, python-format
 msgid "You cannot delete this %(attendance)s"
-msgstr "Bu %(katılım) silmezsiniz"
+msgstr "Bu %(attendance)s silmezsiniz"
 
 #: .\attendance\views.py:535 .\attendance\views\views.py:619
 msgid "Attendance account added."
@@ -22212,7 +22212,7 @@ msgstr "Adaylar işe başlıyor"
 
 #: .\recruitment\models.py:504
 msgid "Choose valid choice"
-msgstr "Geçerli bir seçim seçin ""
+msgstr "Geçerli bir seçim seçin "
 
 #: .\recruitment\models.py:522
 msgid "Employee is uniques for candidate"
