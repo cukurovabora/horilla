@@ -711,6 +711,7 @@ def asset_request_reject(request, req_id):
         request.user.employee_get,
         recipient=asset_request.requested_employee_id.employee_user_id,
         verb="Your asset request rejected!.",
+        verb_tr="Varlık talebiniz reddedildi!.",
         verb_ar="تم رفض طلب الأصول الخاص بك!",
         verb_de="Ihr Antragsantrag wurde abgelehnt!",
         verb_es="¡Se ha rechazado su solicitud de activo!",
@@ -778,6 +779,7 @@ def asset_allocate_return_request(request, asset_id):
         recipient=permed_users,
         verb=f"Return request for {asset_assign.asset_id} initiated from\
             {asset_assign.assigned_to_employee_id}",
+        verb_tr=f"{asset_assign.asset_id} için iade talebi {asset_assign.assigned_to_employee_id} tarafından başlatıldı",
         verb_ar=f"تم بدء طلب الإرجاع للمورد {asset_assign.asset_id}\
             من الموظف {asset_assign.assigned_to_employee_id}",
         verb_de=f"Rückgabewunsch für {asset_assign.asset_id} vom Mitarbeiter\

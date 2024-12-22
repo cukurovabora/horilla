@@ -261,6 +261,7 @@ def recruitment(request):
                     request.user.employee_get,
                     recipient=users,
                     verb="You are chosen as one of recruitment manager",
+                    verb_tr="Bir işe alım yöneticisi olarak seçildiniz.",
                     verb_ar="تم اختيارك كأحد مديري التوظيف",
                     verb_de="Sie wurden als einer der Personalvermittler ausgewählt",
                     verb_es="Has sido elegido/a como uno de los gerentes de contratación",
@@ -356,6 +357,7 @@ def recruitment_update(request, rec_id):
                     request.user.employee_get,
                     recipient=users,
                     verb=f"{recruitment_obj} is updated, You are chosen as one of the managers",
+                    verb_tr=f"{recruitment_obj} güncellendi, yöneticilerden biri olarak seçildiniz.",
                     verb_ar=f"{recruitment_obj} تم تحديثه، تم اختيارك كأحد المديرين",
                     verb_de=f"{recruitment_obj} wurde aktualisiert. Sie wurden als\
                             einer der Manager ausgewählt",
@@ -742,6 +744,7 @@ def stage_update_pipeline(request, stage_id):
                     recipient=users,
                     verb=f"{stage_obj.stage} stage in recruitment {stage_obj.recruitment_id}\
                             is updated, You are chosen as one of the managers",
+                    verb_tr=f"{stage_obj.recruitment_id} işe alımındaki {stage_obj.stage} aşaması güncellendi, yöneticilerden biri olarak seçildiniz.",
                     verb_ar=f"تم تحديث مرحلة {stage_obj.stage} في التوظيف {stage_obj.recruitment_id}\
                             ، تم اختيارك كأحد المديرين",
                     verb_de=f"Die Stufe {stage_obj.stage} in der Rekrutierung {stage_obj.recruitment_id}\
@@ -782,6 +785,7 @@ def recruitment_update_pipeline(request, rec_id):
                     request.user.employee_get,
                     recipient=users,
                     verb=f"{recruitment_obj} is updated, You are chosen as one of the managers",
+                    verb_tr=f"{recruitment_obj} güncellendi, yöneticilerden biri olarak seçildiniz.",
                     verb_ar=f"تم تحديث {recruitment_obj}، تم اختيارك كأحد المديرين",
                     verb_de=f"{recruitment_obj} wurde aktualisiert.\
                           Sie wurden als einer der Manager ausgewählt",
@@ -877,6 +881,7 @@ def candidate_stage_update(request, cand_id):
                 request.user.employee_get,
                 recipient=users,
                 verb=f"New candidate arrived on stage {stage_obj.stage}",
+                verb_tr=f"Yeni aday {stage_obj.stage} aşamasına ulaştı.",
                 verb_ar=f"وصل مرشح جديد إلى المرحلة {stage_obj.stage}",
                 verb_de=f"Neuer Kandidat ist auf der Stufe {stage_obj.stage} angekommen",
                 verb_es=f"Nuevo candidato llegó a la etapa {stage_obj.stage}",
@@ -1160,6 +1165,7 @@ def stage(request):
                     recipient=users,
                     verb=f"Stage {stage_obj} is updated on recruitment {stage_obj.recruitment_id},\
                           You are chosen as one of the managers",
+                    verb_tr=f"{stage_obj.recruitment_id} işe alımındaki {stage_obj} aşaması güncellendi, yöneticilerden biri olarak seçildiniz.",
                     verb_ar=f"تم تحديث المرحلة {stage_obj} في التوظيف\
                           {stage_obj.recruitment_id}، تم اختيارك كأحد المديرين",
                     verb_de=f"Stufe {stage_obj} wurde in der Rekrutierung {stage_obj.recruitment_id}\
@@ -1813,6 +1819,7 @@ def interview_schedule(request, cand_id):
                 request.user.employee_get,
                 recipient=users,
                 verb=f"You are scheduled as an interviewer for an interview with {cand_id.name} on {interview_date} at {interview_time}.",
+                verb_tr=f"{cand_id.name} ile {interview_date} tarihinde, {interview_time} saatinde yapılacak bir görüşmede mülakatçı olarak planlandınız.",
                 verb_ar=f"أنت مجدول كمقابلة مع {cand_id.name} يوم {interview_date} في توقيت {interview_time}.",
                 verb_de=f"Sie sind als Interviewer für ein Interview mit {cand_id.name} am {interview_date} um {interview_time} eingeplant.",
                 verb_es=f"Estás programado como entrevistador para una entrevista con {cand_id.name} el {interview_date} a las {interview_time}.",
@@ -1852,6 +1859,7 @@ def create_interview_schedule(request):
                 request.user.employee_get,
                 recipient=users,
                 verb=f"You are scheduled as an interviewer for an interview with {cand_id.name} on {interview_date} at {interview_time}.",
+                verb_tr=f"{cand_id.name} ile {interview_date} tarihinde, {interview_time} saatinde yapılacak bir görüşmede mülakatçı olarak planlandınız.",
                 verb_ar=f"أنت مجدول كمقابلة مع {cand_id.name} يوم {interview_date} في توقيت {interview_time}.",
                 verb_de=f"Sie sind als Interviewer für ein Interview mit {cand_id.name} am {interview_date} um {interview_time} eingeplant.",
                 verb_es=f"Estás programado como entrevistador para una entrevista con {cand_id.name} el {interview_date} a las {interview_time}.",
@@ -1917,6 +1925,7 @@ def interview_edit(request, interview_id):
                 request.user.employee_get,
                 recipient=users,
                 verb=f"You are scheduled as an interviewer for an interview with {cand_id.name} on {interview_date} at {interview_time}.",
+                verb_tr=f"{cand_id.name} ile {interview_date} tarihinde, {interview_time} saatinde yapılacak bir görüşmede mülakatçı olarak planlandınız.",
                 verb_ar=f"أنت مجدول كمقابلة مع {cand_id.name} يوم {interview_date} في توقيت {interview_time}.",
                 verb_de=f"Sie sind als Interviewer für ein Interview mit {cand_id.name} am {interview_date} um {interview_time} eingeplant.",
                 verb_es=f"Estás programado como entrevistador para una entrevista con {cand_id.name} el {interview_date} a las {interview_time}.",
@@ -3526,6 +3535,7 @@ def candidate_add_notes(request, cand_id):
                     label=label,
                     recipient=users,
                     verb=f"{label} has added a note on the candidate {candidate}",
+                    verb_tr=f"{candidate} adayına {label} bir not ekledi.",
                     verb_ar=f"أضاف {label} ملاحظة حول المرشح {candidate}",
                     verb_de=f"{label} hat dem {candidate} eine Notiz hinzugefügt.",
                     verb_es=f"{label} agregó una nota al {candidate}.",

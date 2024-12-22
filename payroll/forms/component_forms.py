@@ -950,6 +950,7 @@ class ReimbursementForm(ModelForm):
                         emp.employee_work_info.reporting_manager_id.employee_user_id
                     ),
                     verb=f"You have a new reimbursement request to approve for {emp}.",
+                    verb_tr=f"{emp} için onaylamanız gereken yeni bir geri ödeme talebiniz var.",
                     verb_ar=f"لديك طلب استرداد نفقات جديد يتعين عليك الموافقة عليه لـ {emp}.",
                     verb_de=f"Sie haben einen neuen Rückerstattungsantrag zur Genehmigung für {emp}.",
                     verb_es=f"Tienes una nueva solicitud de reembolso para aprobar para {emp}.",

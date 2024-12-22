@@ -374,6 +374,7 @@ def attendance_request_changes(request, attendance_id):
                     recipient=reporting_manager,
                     verb=f"{employee.employee_first_name} {user_last_name}'s\
                           attendance update request for {attendance.attendance_date} is created",
+                    verb_tr=f"{employee.employee_first_name} {user_last_name}'nin {attendance.attendance_date} tarihli katılım güncelleme talebi oluşturuldu.",
                     verb_ar=f"تم إنشاء طلب تحديث الحضور لـ {employee.employee_first_name} \
                         {user_last_name }في {attendance.attendance_date}",
                     verb_de=f"Die Anfrage zur Aktualisierung der Anwesenheit von \
@@ -530,6 +531,7 @@ def approve_validate_attendance_request(request, attendance_id):
         recipient=employee.employee_user_id,
         verb=f"Your attendance request for \
             {attendance.attendance_date} is validated",
+        verb_tr=f"{attendance.attendance_date} tarihli katılım talebiniz doğrulandı.",
         verb_ar=f"تم التحقق من طلب حضورك في تاريخ \
             {attendance.attendance_date}",
         verb_de=f"Ihr Anwesenheitsantrag für das Datum \
@@ -551,6 +553,7 @@ def approve_validate_attendance_request(request, attendance_id):
             recipient=reporting_manager,
             verb=f"{employee.employee_first_name} {user_last_name}'s\
                   attendance request for {attendance.attendance_date} is validated",
+            verb_tr=f"{employee.employee_first_name} {user_last_name}'nin {attendance.attendance_date} tarihli katılım talebi doğrulandı.",
             verb_ar=f"تم التحقق من طلب الحضور لـ {employee.employee_first_name} \
                 {user_last_name} في {attendance.attendance_date}",
             verb_de=f"Die Anwesenheitsanfrage von {employee.employee_first_name} \
@@ -594,6 +597,7 @@ def cancel_attendance_request(request, attendance_id):
                 request.user,
                 recipient=employee.employee_user_id,
                 verb=f"Your attendance request for {attendance.attendance_date} is rejected",
+                verb_tr=f"{attendance.attendance_date} tarihli katılım talebiniz reddedildi.",
                 verb_ar=f"تم رفض طلبك للحضور في تاريخ {attendance.attendance_date}",
                 verb_de=f"Ihre Anwesenheitsanfrage für {attendance.attendance_date} wurde abgelehnt",
                 verb_es=f"Tu solicitud de asistencia para el {attendance.attendance_date} ha sido rechazada",
@@ -732,6 +736,7 @@ def bulk_approve_attendance_request(request):
             recipient=employee.employee_user_id,
             verb=f"Your attendance request for \
                 {attendance.attendance_date} is validated",
+            verb_tr=f"{attendance.attendance_date} tarihli katılım talebiniz doğrulandı.",
             verb_ar=f"تم التحقق من طلب حضورك في تاريخ \
                 {attendance.attendance_date}",
             verb_de=f"Ihr Anwesenheitsantrag für das Datum \
@@ -753,6 +758,7 @@ def bulk_approve_attendance_request(request):
                 recipient=reporting_manager,
                 verb=f"{employee.employee_first_name} {user_last_name}'s\
                     attendance request for {attendance.attendance_date} is validated",
+                verb_tr=f"{employee.employee_first_name} {user_last_name}'nin {attendance.attendance_date} tarihli katılım talebi doğrulandı.",
                 verb_ar=f"تم التحقق من طلب الحضور لـ {employee.employee_first_name} \
                     {user_last_name} في {attendance.attendance_date}",
                 verb_de=f"Die Anwesenheitsanfrage von {employee.employee_first_name} \
@@ -801,6 +807,7 @@ def bulk_reject_attendance_request(request):
                     request.user,
                     recipient=employee.employee_user_id,
                     verb=f"Your attendance request for {attendance.attendance_date} is rejected",
+                    verb_tr=f"{attendance.attendance_date} tarihli katılım talebiniz reddedildi.",
                     verb_ar=f"تم رفض طلبك للحضور في تاريخ {attendance.attendance_date}",
                     verb_de=f"Ihre Anwesenheitsanfrage für {attendance.attendance_date} wurde abgelehnt",
                     verb_es=f"Tu solicitud de asistencia para el {attendance.attendance_date} ha sido rechazada",

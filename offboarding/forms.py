@@ -299,6 +299,7 @@ class ResignationLetterForm(ModelForm):
                     request.user.employee_get,
                     recipient=self.instance.employee_id.get_reporting_manager().employee_user_id,
                     verb=f"{self.instance.employee_id.get_full_name()} requested for resignation.",
+                    verb_tr=f"",
                     verb_ar=f"",
                     verb_de=f"",
                     verb_es=f"",

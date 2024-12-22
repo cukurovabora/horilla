@@ -33,6 +33,7 @@ def notify_expiring_assets():
                     bot,
                     recipient=asset.owner.employee_user_id,
                     verb=f"The Asset ' {asset.asset_name} ' expires in {asset.notify_before} days",
+                    verb_tr=f"Varlık ' {asset.asset_name} ' {asset.notify_before} gün içinde sona eriyor",
                     verb_ar=f"تنتهي صلاحية الأصل ' {asset.asset_name} ' خلال {asset.notify_before}\
                     من الأيام",
                     verb_de=f"Das Asset {asset.asset_name} läuft in {asset.notify_before} Tagen\
@@ -67,6 +68,7 @@ def notify_expiring_documents():
                     recipient=document.employee_id.employee_user_id,
                     verb=f"The document ' {document.title} ' expires in {document.notify_before}\
                         days",
+                    verb_tr=f"Belge ' {document.title} ' {document.notify_before} gün içinde sona eriyor",
                     verb_ar=f"تنتهي صلاحية المستند '{document.title}' خلال {document.notify_before}\
                     يوم",
                     verb_de=f"Das Dokument '{document.title}' läuft in {document.notify_before}\

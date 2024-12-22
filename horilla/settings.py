@@ -205,11 +205,8 @@ DJANGO_NOTIFICATIONS_CONFIG = {
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
 LANGUAGES = (
-    ("en", "English (US)"),
-    ("de", "Deutsche"),
-    ("es", "Español"),
-    ("fr", "France"),
-    ("ar", "عربى"),
+    ("tr", "Türkçe"),
+    ("en", "English (US)")
 )
 
 LOCALE_PATHS = [

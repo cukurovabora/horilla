@@ -1306,6 +1306,7 @@ def validate_bulk_attendance(request):
                 request.user.employee_get,
                 recipient=attendance.employee_id.employee_user_id,
                 verb=f"Your attendance for the date {attendance.attendance_date} is validated",
+                verb_tr=f"{attendance.attendance_date} tarihindeki katılımınız doğrulandı.",
                 verb_ar=f"تم التحقق من حضورك في تاريخ {attendance.attendance_date}",
                 verb_de=f"Ihre Anwesenheit für das Datum {attendance.attendance_date} wurde bestätigt",
                 verb_es=f"Se ha validado su asistencia para la fecha {attendance.attendance_date}",
@@ -1359,6 +1360,7 @@ def validate_this_attendance(request, obj_id):
             request.user.employee_get,
             recipient=attendance.employee_id.employee_user_id,
             verb=f"Your attendance for the date {attendance.attendance_date} is validated",
+            verb_tr=f"{attendance.attendance_date} tarihindeki katılımınız onaylandı.",
             verb_ar=f"تم تحقيق حضورك في تاريخ {attendance.attendance_date}",
             verb_de=f"Deine Anwesenheit für das Datum {attendance.attendance_date} ist bestätigt.",
             verb_es=f"Se valida tu asistencia para la fecha {attendance.attendance_date}.",
@@ -1394,6 +1396,7 @@ def revalidate_this_attendance(request, obj_id):
                 ),
                 verb=f"{attendance.employee_id} requested revalidation for \
                     {attendance.attendance_date} attendance",
+                verb_tr=f"{attendance.employee_id}, {attendance.attendance_date} tarihindeki katılım için yeniden doğrulama talep etti.",
                 verb_ar=f"{attendance.employee_id} طلب إعادة\
                       التحقق من حضور تاريخ {attendance.attendance_date}",
                 verb_de=f"{attendance.employee_id} beantragte eine Neubewertung der \
@@ -1433,6 +1436,7 @@ def approve_overtime(request, obj_id):
                 recipient=attendance.employee_id.employee_user_id,
                 verb=f"Your {attendance.attendance_date}'s attendance \
                     overtime approved.",
+                verb_tr=f"{attendance.attendance_date} tarihli katılımınızın fazla mesaisi onaylandı.",
                 verb_ar=f"تمت الموافقة على إضافة ساعات العمل الإضافية لتاريخ \
                     {attendance.attendance_date}.",
                 verb_de=f"Die Überstunden für den {attendance.attendance_date}\
@@ -1468,6 +1472,7 @@ def approve_bulk_overtime(request):
                 recipient=attendance.employee_id.employee_user_id,
                 verb=f"Overtime approved for\
                       {attendance.attendance_date}'s attendance",
+                verb_tr=f"{attendance.attendance_date} tarihli katılım için fazla mesai onaylandı.",
                 verb_ar=f"تمت الموافقة على العمل الإضافي لحضور تاريخ \
                     {attendance.attendance_date}",
                 verb_de=f"Überstunden für die Anwesenheit am \
@@ -2132,6 +2137,7 @@ def create_attendancerequest_comment(request, attendance_id):
                             request.user.employee_get,
                             recipient=rec,
                             verb=f"{attendance.employee_id}'s attendance request has received a comment.",
+                            verb_tr=f"{attendance.employee_id}'nin katılım talebine bir yorum yapıldı.",
                             verb_ar=f"تلقت طلب الحضور {attendance.employee_id} تعليقًا.",
                             verb_de=f"{attendance.employee_id}s Anfrage zur Anwesenheit hat einen Kommentar erhalten.",
                             verb_es=f"La solicitud de asistencia de {attendance.employee_id} ha recibido un comentario.",
@@ -2149,6 +2155,7 @@ def create_attendancerequest_comment(request, attendance_id):
                             request.user.employee_get,
                             recipient=rec,
                             verb="Your attendance request has received a comment.",
+                            verb_tr="Katılım talebinize bir yorum yapıldı.",
                             verb_ar="تلقى طلب الحضور الخاص بك تعليقًا.",
                             verb_de="Ihr Antrag auf Anwesenheit hat einen Kommentar erhalten.",
                             verb_es="Tu solicitud de asistencia ha recibido un comentario.",
@@ -2166,6 +2173,7 @@ def create_attendancerequest_comment(request, attendance_id):
                             request.user.employee_get,
                             recipient=rec,
                             verb=f"{attendance.employee_id}'s attendance request has received a comment.",
+                            verb_tr=f"{attendance.employee_id} adlı kişinin katılım talebine bir yorum yapıldı.",
                             verb_ar=f"تلقت طلب الحضور {attendance.employee_id} تعليقًا.",
                             verb_de=f"{attendance.employee_id}s Anfrage zur Anwesenheit hat einen Kommentar erhalten.",
                             verb_es=f"La solicitud de asistencia de {attendance.employee_id} ha recibido un comentario.",
@@ -2180,6 +2188,7 @@ def create_attendancerequest_comment(request, attendance_id):
                         request.user.employee_get,
                         recipient=rec,
                         verb="Your attendance request has received a comment.",
+                        verb_tr="Katılım talebinize bir yorum yapıldı.",
                         verb_ar="تلقى طلب الحضور الخاص بك تعليقًا.",
                         verb_de="Ihr Antrag auf Anwesenheit hat einen Kommentar erhalten.",
                         verb_es="Tu solicitud de asistencia ha recibido un comentario.",

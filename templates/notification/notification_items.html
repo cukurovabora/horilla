@@ -39,7 +39,12 @@
                         {% endif %}
                     </div>
                     <div>
-                        {% if LANGUAGE_CODE == 'ar' %}
+                        {% if LANGUAGE_CODE == 'tr' %}
+                            <p class="oh-navbar__notification-text"
+                                :class="markRead ? '' : 'oh-navbar__notification-text--unread' ">
+                                {{ notification.data.verb_tr }}
+                            </p>
+                        {% elif LANGUAGE_CODE == 'ar' %}
                             <p class="oh-navbar__notification-text"
                                 :class="markRead ? '' : 'oh-navbar__notification-text--unread' ">
                                 {{ notification.data.verb_ar }}
