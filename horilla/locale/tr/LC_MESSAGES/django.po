@@ -8836,7 +8836,7 @@ msgid "Recruitment deleted."
 msgstr "İşe alım silindi."
 
 msgid "Recruitment already in use."
-msgstr "İşe alım zaten kullanılıyor
+msgstr "İşe alım zaten kullanılıyor"
 
 msgid "You cannot delete %(candidate_obj)s"
 msgstr "Bu adayı silemezsiniz: %(candidate_obj)s"
