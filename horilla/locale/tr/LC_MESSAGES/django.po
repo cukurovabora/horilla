@@ -8636,47 +8636,221 @@ msgstr "Açık Pozisyon"
 msgid "Hired"
 msgstr "İşe Alındı"
 
+msgid "Interview From"
+msgstr "Mülakat Başlangıç"
+
+msgid "Interview Till"
+msgstr "Mülakat Bitiş"
+
+msgid "Added In Rejected section"
+msgstr "Reddedilen Bölümüne Eklendi"
+
+msgid "Add To Rejected section"
+msgstr "Reddedilen Bölüme Ekle"
+
+msgid "Next Candidate"
+msgstr "Sonraki Aday"
+
+msgid "Previous Candidate"
+msgstr "Önceki Aday"
+
+msgid "Convert To Employee"
+msgstr "Çalışana Dönüştür"
+
+msgid "Survey"
+msgstr "Anket"
+
+msgid "Recruitment Information"
+msgstr "İşe Alım Bilgileri"
+
+msgid "Current Stage"
+msgstr "Mevcut Aşama"
+
+msgid "Schedule Interview"
+msgstr "Mülakat Planla"
+
+msgid "This candidate does not have a resume on file."
+msgstr "Bu adayın dosyasında özgeçmiş bulunmamaktadır."
+
+msgid "No survey templates have been established yet."
+msgstr "Henüz anket şablonları oluşturulmamış."
+
+msgid "Do you really want to delete this file ?"
+msgstr "Bu dosyayı gerçekten silmek istiyor musunuz?"
+
+msgid "No notes have been added for this candidate"
+msgstr "Bu aday için not eklenmemiş."
+
+msgid "Are you sure you want to remove this interviewer?"
+msgstr "Bu mülakatçıyı kaldırmak istediğinizden emin misiniz?"
+
+msgid "Interviewers"
+msgstr "Mülakatçılar"
+
+msgid "Are you sure you want to delete this interview?"
+msgstr "Bu mülakatı silmek istediğinizden emin misiniz?"
+
+msgid "No Interviews Found."
+msgstr "Mülakat Bulunamadı."
+
+msgid "Interview Date From"
+msgstr "Mülakat Tarihi Başlangıç"
+
+msgid "Interview Date Till"
+msgstr "Mülakat Tarihi Bitiş"
+
+msgid "There are no ratings to display at the moment."
+msgstr "Şu anda görüntülenecek puanlama yok."
+
+msgid "Total Vacancies"
+msgstr "Toplam Açık Pozisyonlar"
+
+msgid "Ongoing Recruitments"
+msgstr "Devam Eden İşe Alımlar"
+
+msgid "Conversion Rate"
+msgstr "Dönüşüm Oranı"
+
+msgid "Offer Acceptance Rate (OAR)"
+msgstr "Teklif Kabul Oranı (OAR)"
+
+msgid "Skill Zone Status"
+msgstr "Beceri Alanı Durumu"
+
+msgid "No skill zone available."
+msgstr "Beceri alanı mevcut değil."
+
+msgid "Candidate Offer Letter Status"
+msgstr "Aday Teklif Mektubu Durumu"
+
+msgid "No Candidates available."
+msgstr "Aday Mevcut Değil."
+
+msgid "Candidate on Onboard"
+msgstr "Yerleşimdeki Aday"
+
+msgid "Joinings Per Month"
+msgstr "Aylık Katılımlar"
+
+msgid "No records were available."
+msgstr "Kayıt bulunamadı."
+
+msgid "Current Hiring Pipeline"
+msgstr "Mevcut İşe Alım Süreci"
+
+msgid "No onboarding tasks are currently available."
+msgstr "Şu anda mevcut yerleşim görevi bulunmamaktadır."
+
+msgid "Candidates Per Stage"
+msgstr "Aşama Başına Adaylar"
+
+msgid "No recruitment stages currently available."
+msgstr "Şu anda mevcut işe alım aşaması bulunmamaktadır."
+
+msgid "Ongoing Recruitments & Hiring Managers"
+msgstr "Devam Eden İşe Alımlar ve İşe Alım Yöneticileri"
+
+msgid "Resumes"
+msgstr "Özgeçmişler"
+
+msgid "matching Resumes"
+msgstr "Eşleşen Özgeçmişler"
+
+msgid "Stage bulk update"
+msgstr "Aşama Toplu Güncelleme"
+
+msgid "INTERVIEW : Today at"
+msgstr "MÜLAKAT: Bugün"
+
+msgid "with"
+msgstr "ile"
+
+msgid "Move"
+msgstr "Taşı"
+
+msgid "Interviews Scheduled"
+msgstr "Planlanmış Mülakatlar"
+
+msgid "Added In Rejected Candidates"
+msgstr "Reddedilen Adaylara Eklendi"
+
+msgid "Add To Rejected Candidates"
+msgstr "Reddedilen Adaylara Ekle"
+
+msgid "View Note"
+msgstr "Notu Görüntüle"
+
 msgid "Resume"
 msgstr "Özgeçmiş"
+
+msgid "Actions"
+msgstr "Eylemler"
+
+msgid "Add Recruitment"
+msgstr "İşe Alım Ekle"
+
+msgid "Profile"
+msgstr "Profil"
 
 msgid "Add Candidate"
 msgstr "Aday Ekle"
 
+msgid "Edit Recruitment"
+msgstr "İşe Alımı Düzenle"
+
 msgid "Survey Templates"
 msgstr "Anket Şablonları"
+
+msgid "Is Published?"
+msgstr "Yayınlandı mı?"
+
+msgid "Optional Profile Image?"
+msgstr "Opsiyonel Profil Görseli?"
+
+msgid "Optional Resume?"
+msgstr "Opsiyonel Özgeçmiş?"
 
 msgid "Edit Stage"
 msgstr "Aşamayı Düzenle"
 
+msgid "Are you sure you want to delete this candidate?"
+msgstr "Bu adayı silmek istediğinizden emin misiniz?"
+
+msgid "Score"
+msgstr "Puan"
+
+msgid "Need verification"
+msgstr "Doğrulama Gerekiyor"
+
+msgid "Candidated Added"
+msgstr "Aday Eklendi"
+
+msgid "Create Candidate"
+msgstr "Aday Oluştur"
+
 msgid "Recruitments"
 msgstr "İşe Alımlar"
 
-msgid "View Recruitments"
-msgstr "İşe Alımları Görüntüle"
+msgid "Sequence updated"
+msgstr "Sıra güncellendi."
 
-msgid "Open Jobs"
-msgstr "Açık Pozisyonlar"
+msgid "candidates"
+msgstr "Adaylar"
 
-msgid "Apply Now"
-msgstr "Şimdi Başvur"
-
-msgid "Total vacancies"
-msgstr "Toplam Boş Pozisyonlar"
-
-msgid "Total Hires"
-msgstr "Toplam İşe Alımlar"
+msgid "Add to Skill Zone"
+msgstr "Beceri Alanına Ekle"
 
 msgid "Switch to Ongoing Recruitments"
-msgstr "Devam Eden İşe Alımlara Geç"
+msgstr "Devam Eden İşe Alımlara Geçiş Yap"
 
 msgid "Switch to Closed Recruitments"
-msgstr "Kapanan İşe Alımlara Geç"
+msgstr "Kapanmış İşe Alımlara Geçiş Yap"
 
 msgid "At present, there is no closed recruitment."
-msgstr "Şu anda kapanmış bir işe alım bulunmamaktadır."
+msgstr "Şu anda kapalı işe alım bulunmamaktadır."
 
 msgid "At present, there is no ongoing recruitment."
-msgstr "Şu anda devam eden bir işe alım bulunmamaktadır."
+msgstr "Şu anda devam eden işe alım bulunmamaktadır."
 
 msgid "Are you sure you want to close this recruitment?"
 msgstr "Bu işe alımı kapatmak istediğinizden emin misiniz?"
@@ -8684,8 +8858,78 @@ msgstr "Bu işe alımı kapatmak istediğinizden emin misiniz?"
 msgid "Are you sure you want to reopen this recruitment?"
 msgstr "Bu işe alımı yeniden açmak istediğinizden emin misiniz?"
 
-msgid "Candidate Info"
-msgstr "Aday Bilgisi"
+msgid "Reopen"
+msgstr "Yeniden Aç"
+
+msgid "Are you sure you want to delete this recruitment?"
+msgstr "Bu işe alımı silmek istediğinizden emin misiniz?"
+
+msgid "Unknown"
+msgstr "Bilinmeyen"
+
+msgid "- Open Recruitments"
+msgstr "- Açık İşe Alımlar"
+
+msgid "Open Job Listings"
+msgstr "Açık İş İlanları"
+
+msgid ""
+"We're hiring! Join our team and be part of a vibrant workplace where your "
+"talents make a difference. Here are the open Recruitments...."
+msgstr ""
+"İşe alım yapıyoruz! Ekibimize katılın ve yeteneklerinizle fark yaratacağınız "
+"canlı bir iş ortamının parçası olun. İşte açık işe alımlar..."
+
+msgid "Apply Now"
+msgstr "Hemen Başvur"
+
+msgid "Applied"
+msgstr "Başvuruldu"
+
+msgid "Capacity"
+msgstr "Kapasite"
+
+msgid "Total vacancies"
+msgstr "Toplam Açık Pozisyonlar"
+
+msgid "Open Jobs"
+msgstr "Açık İşler"
+
+msgid "Total Hires"
+msgstr "Toplam İşe Alım"
+
+msgid "Jobs"
+msgstr "İşler"
+
+msgid "Share Link"
+msgstr "Bağlantıyı Paylaş"
+
+msgid "Are you sure to delete this recruitment?"
+msgstr "Bu işe alımı silmek istediğinizden emin misiniz?"
+
+msgid "Duplicate Recruitment"
+msgstr "İşe Alımı Çoğalt"
+
+msgid "View Recruitments"
+msgstr "İşe Alımları Görüntüle"
+
+msgid "Job positions :"
+msgstr "İş Pozisyonları:"
+
+msgid "Is Event Based?"
+msgstr "Etkinlik Tabanlı mı?"
+
+msgid "Is Closed?"
+msgstr "Kapalı mı?"
+
+msgid "Is Active?"
+msgstr "Aktif mi?"
+
+msgid "Skills"
+msgstr "Beceriler"
+
+msgid "Candidate Self Tracking"
+msgstr "Aday Kendi Takibi"
 
 msgid "Application Tracking"
 msgstr "Başvuru Takibi"
@@ -8696,21 +8940,29 @@ msgstr "Bu özelliği etkinleştirerek adaylar işe alım ilerlemelerini takip e
 msgid "Rating Visiblity"
 msgstr "Puan Görünürlüğü"
 
-msgid ""
-"By enabling the feature candidates can view their recruitment overall rating"
+msgid "By enabling the feature candidates can view their recruitment overall rating"
 msgstr "Bu özelliği etkinleştirerek adaylar genel işe alım puanlarını görebilir."
 
 msgid "Reject Reasons"
-msgstr "Reddetme Nedenleri"
+msgstr "Reddetme Sebepleri"
 
 msgid "Are you sure want to delete this reason?"
-msgstr "Bu nedeni silmek istediğinizden emin misiniz?"
+msgstr "Bu sebebi silmek istediğinizden emin misiniz?"
 
 msgid "There is no reject reasons at this moment."
-msgstr "Şu anda reddetme nedeni bulunmamaktadır."
+msgstr "Şu anda reddetme sebebi bulunmamaktadır."
+
+msgid "Skill"
+msgstr "Beceri"
+
+msgid "Are you sure want to delete this skill?"
+msgstr "Bu beceriyi silmek istediğinizden emin misiniz?"
+
+msgid "There are no skills added at this moment."
+msgstr "Şu anda eklenmiş bir beceri yok."
 
 msgid "There are currently no skill zone to consider."
-msgstr "Şu anda değerlendirilmesi gereken bir beceri alanı yok."
+msgstr "Şu anda değerlendirilmesi gereken beceri alanı yok."
 
 msgid "Do you want to Archive this Skill zone?"
 msgstr "Bu beceri alanını arşivlemek istiyor musunuz?"
@@ -8721,22 +8973,13 @@ msgstr "Bu beceri alanını arşivden çıkarmak istiyor musunuz?"
 msgid "Do you want to delete this Skill zone?"
 msgstr "Bu beceri alanını silmek istiyor musunuz?"
 
-msgid "Do you want to archive this skill zone ?"
-msgstr "Bu beceri alanını arşivlemek istiyor musunuz?"
-
-msgid "Do you want to un archive this skill zone?"
-msgstr "Bu beceri alanını arşivden çıkarmak istiyor musunuz?"
-
-msgid "Are you sure want to delete this skill zone?"
-msgstr "Bu beceri alanını silmek istediğinizden emin misiniz?"
-
 msgid "Added on"
-msgstr "Eklenme tarihi"
+msgstr "Eklendiği Tarih"
 
 msgid "Do you want to remove this candidate"
 msgstr "Bu adayı kaldırmak istiyor musunuz?"
 
-msgid "Reasom"
+msgid "Reason"
 msgstr "Sebep"
 
 msgid "You have no Candidate."
@@ -8751,23 +8994,29 @@ msgstr "Aşamaları Görüntüle"
 msgid "Add Stage"
 msgstr "Aşama Ekle"
 
-msgid "This field is requied"
-msgstr "Bu alan gereklidir."
+msgid "This field is required"
+msgstr "Bu alan gereklidir"
 
 msgid "interview"
 msgstr "Mülakat"
 
+msgid "Add more option.."
+msgstr "Daha fazla seçenek ekle.."
+
 msgid "Survey Filter"
 msgstr "Anket Filtresi"
 
-msgid "Create Survey Template"
-msgstr "Anket Şablonu Oluştur"
+msgid "Add more options.."
+msgstr "Daha fazla seçenek ekle.."
 
 msgid "Are you sure want to delete?"
 msgstr "Silmek istediğinizden emin misiniz?"
 
 msgid "No questions have been established yet."
-msgstr "Henüz soru oluşturulmadı."
+msgstr "Henüz soru oluşturulmamış."
+
+msgid "Create Survey Template"
+msgstr "Anket Şablonu Oluştur"
 
 msgid "Questions"
 msgstr "Sorular"
@@ -8779,16 +9028,16 @@ msgid "Do you want to delete this template"
 msgstr "Bu şablonu silmek istiyor musunuz?"
 
 msgid "delete"
-msgstr "Sil"
+msgstr "sil"
 
 msgid "No template groups have been established yet."
-msgstr "Henüz şablon grubu oluşturulmadı."
+msgstr "Henüz şablon grupları oluşturulmamış."
 
 msgid "No template have been established yet."
-msgstr "Henüz şablon oluşturulmadı."
+msgstr "Henüz şablon oluşturulmamış."
 
 msgid "Duplicate Survey Template"
-msgstr "Anket Şablonunu Kopyala"
+msgstr "Anket Şablonunu Çoğalt"
 
 msgid "Templates"
 msgstr "Şablonlar"
@@ -8796,8 +9045,8 @@ msgstr "Şablonlar"
 msgid "Create template group"
 msgstr "Şablon Grubu Oluştur"
 
-msgid "Create survey questions"
-msgstr "Anket Soruları Oluştur"
+msgid "Are you sure want to delete?"
+msgstr "Silmek istediğinizden emin misiniz?"
 
 msgid "Mandatory Question"
 msgstr "Zorunlu Soru"
@@ -8823,23 +9072,55 @@ msgstr "Aday eklendi."
 msgid "Stage added."
 msgstr "Aşama eklendi."
 
-msgid "You dont have access"
+msgid "You don't have access"
 msgstr "Erişiminiz yok."
 
 msgid "Stage updated."
 msgstr "Aşama güncellendi."
 
-msgid "Recruitment updated."
-msgstr "İşe alım güncellendi."
-
 msgid "Recruitment deleted."
 msgstr "İşe alım silindi."
 
 msgid "Recruitment already in use."
-msgstr "İşe alım zaten kullanılıyor"
+msgstr "Bu işe alım zaten kullanımda."
 
+msgid "Sequence updated."
+msgstr "Sıra güncellendi."
+
+msgid "Candidate stage updated"
+msgstr "Aday aşaması güncellendi."
+
+msgid "Something went wrong, Try again."
+msgstr "Bir şeyler yanlış gitti. Tekrar deneyin."
+
+msgid "You cannot delete this note."
+msgstr "Bu notu silemezsiniz."
+
+msgid "Stage manager removed successfully."
+msgstr "Aşama yöneticisi başarıyla kaldırıldı."
+
+msgid "Stage deleted successfully."
+msgstr "Aşama başarıyla silindi."
+
+msgid "You cannot delete this stage"
+msgstr "Bu aşamayı silemezsiniz."
+
+msgid "Candidate Updated Successfully."
+msgstr "Aday başarıyla güncellendi."
+
+msgid "Candidate deleted successfully."
+msgstr "Aday başarıyla silindi."
+
+msgid "You cannot delete this candidate"
+msgstr "Bu adayı silemezsiniz."
+
+#, python-format
+msgid "%(candidate_obj)s deleted."
+msgstr "%(candidate_obj)s silindi."
+
+#, python-format
 msgid "You cannot delete %(candidate_obj)s"
-msgstr "Bu adayı silemezsiniz: %(candidate_obj)s"
+msgstr "%(candidate_obj)s'yi silemezsiniz."
 
 msgid "Application saved."
 msgstr "Başvuru kaydedildi."
@@ -8851,10 +9132,10 @@ msgid "You cannot delete this recruitment as it is using in {}"
 msgstr "Bu işe alımı silemezsiniz çünkü {} içinde kullanılıyor."
 
 msgid "Recruitment Does not exists.."
-msgstr "İşe alım mevcut değil."
+msgstr "İşe alım mevcut değil.."
 
 msgid "Recruitment already in use for {}."
-msgstr "Bu işe alım zaten {} için kullanılıyor."
+msgstr "İşe alım zaten {} için kullanılıyor."
 
 msgid "Note deleted."
 msgstr "Not silindi."
@@ -8863,10 +9144,10 @@ msgid "You cannot delete this stage while it's in use for {}"
 msgstr "Bu aşamayı silemezsiniz çünkü {} için kullanılıyor."
 
 msgid "Stage Does not exists.."
-msgstr "Aşama mevcut değil."
+msgstr "Aşama mevcut değil.."
 
 msgid "You cannot delete this candidate because the candidate is in {}."
-msgstr "Bu adayı silemezsiniz çünkü aday {} içinde yer alıyor."
+msgstr "Bu adayı silemezsiniz çünkü aday {} içinde bulunuyor."
 
 msgid "Candidate Does not exists."
 msgstr "Aday mevcut değil."
@@ -8877,15 +9158,15 @@ msgstr "%(candidate)s silindi."
 
 #, python-format
 msgid "You cannot delete %(candidate)s"
-msgstr "%(candidate)s silinemez."
+msgstr "%(candidate)s'yi silemezsiniz."
 
 #, python-format
 msgid "Candidate is %(message)s"
-msgstr "Aday durumu: %(message)s."
+msgstr "Aday %(message)s."
 
 #, python-brace-format
 msgid "{candidate} is {message}"
-msgstr "{candidate} durumu: {message}."
+msgstr "{candidate} {message}."
 
 #, python-format
 msgid "Employees joined in %(year)s"
@@ -8895,7 +9176,7 @@ msgid "Openings"
 msgstr "Açık Pozisyonlar"
 
 msgid "File size exceeds the limit. Maximum size is 5 MB"
-msgstr "Dosya boyutu sınırı aşıyor. Maksimum boyut 5 MB."
+msgstr "Dosya boyutu limiti aşıyor. Maksimum boyut 5 MB."
 
 msgid "Your answers are submitted."
 msgstr "Cevaplarınız gönderildi."
@@ -8912,11 +9193,20 @@ msgstr "Soru başarıyla silindi."
 msgid "You cannot delete this question"
 msgstr "Bu soruyu silemezsiniz."
 
+msgid "Vaccancy is filled"
+msgstr "Pozisyon doldu."
+
 msgid "No change detected."
-msgstr "Değişiklik tespit edilmedi."
+msgstr "Değişiklik algılanmadı."
+
+msgid "Files uploaded successfully"
+msgstr "Dosyalar başarıyla yüklendi."
+
+msgid "Candidate not found"
+msgstr "Aday bulunamadı."
 
 msgid "Candidate Does not exists.."
-msgstr "Aday mevcut değil."
+msgstr "Aday mevcut değil.."
 
 msgid "Employee instance already exist"
 msgstr "Çalışan örneği zaten mevcut."
@@ -8931,16 +9221,16 @@ msgid "Skill Zone updated successfully."
 msgstr "Beceri Alanı başarıyla güncellendi."
 
 msgid "Skill zone deleted successfully.."
-msgstr "Beceri Alanı başarıyla silindi."
+msgstr "Beceri Alanı başarıyla silindi.."
 
 msgid "Skill zone not found."
-msgstr "Beceri alanı bulunamadı."
+msgstr "Beceri Alanı bulunamadı."
 
 msgid "Skill zone archived successfully.."
-msgstr "Beceri alanı başarıyla arşivlendi."
+msgstr "Beceri Alanı başarıyla arşivlendi.."
 
 msgid "Skill zone unarchived successfully.."
-msgstr "Beceri alanı başarıyla arşivden çıkarıldı."
+msgstr "Beceri Alanı başarıyla arşivden çıkarıldı.."
 
 msgid "Candidate added successfully."
 msgstr "Aday başarıyla eklendi."
@@ -8949,10 +9239,10 @@ msgid "Candidate edited successfully."
 msgstr "Aday başarıyla düzenlendi."
 
 msgid "Candidate archived successfully.."
-msgstr "Aday başarıyla arşivlendi."
+msgstr "Aday başarıyla arşivlendi.."
 
 msgid "Candidate unarchived successfully.."
-msgstr "Aday başarıyla arşivden çıkarıldı."
+msgstr "Aday başarıyla arşivden çıkarıldı.."
 
 msgid "Trying to connect..."
 msgstr "Bağlanmaya çalışılıyor..."
@@ -8960,17 +9250,17 @@ msgstr "Bağlanmaya çalışılıyor..."
 msgid "Compensatory Leave"
 msgstr "Telafi İzni"
 
-msgid "By enabling this normal users can request for compensatory leave"
-msgstr "Bu özelliği etkinleştirerek normal kullanıcılar telafi izni talep edebilir."
+msgid "By enabling this compensatory leave feature will avilable on Leave."
+msgstr "Bu telafi izni özelliğini etkinleştirerek izinlerde kullanılabilir hale gelir."
 
 msgid "New Joining Today"
-msgstr "Bugün Yeni Katılanlar"
+msgstr "Bugün Katılanlar"
 
 msgid "New Joining This Week"
-msgstr "Bu Hafta Yeni Katılanlar"
+msgstr "Bu Hafta Katılanlar"
 
 msgid "Total Strength"
-msgstr "Toplam Kadro"
+msgstr "Toplam Güç"
 
 msgid "Overall Leave"
 msgstr "Genel İzin"
@@ -8984,14 +9274,11 @@ msgstr "Adaylar İşe Başladı"
 msgid "Attendance Analytics"
 msgstr "Katılım Analitiği"
 
-msgid "Employees Chart"
-msgstr "Çalışan Grafiği"
-
 msgid "Shift Requests To Approve"
 msgstr "Onaylanacak Vardiya Talepleri"
 
 msgid "Work Type Requests To Approve"
-msgstr "Onaylanacak Çalışma Türü Talepleri"
+msgstr "Onaylanacak İş Türü Talepleri"
 
 msgid "Leave Requests To Approve"
 msgstr "Onaylanacak İzin Talepleri"
@@ -9006,19 +9293,22 @@ msgid "Create Announcement."
 msgstr "Duyuru Oluştur."
 
 msgid "No Announcements to show."
-msgstr "Gösterilecek Duyuru Yok."
+msgstr "Gösterilecek duyuru yok."
+
+msgid "NEW"
+msgstr "YENİ"
 
 msgid "Employee Work Information"
 msgstr "Çalışan İş Bilgileri"
 
 msgid "Dashboard Chart Select"
-msgstr "Gösterge Paneli Grafik Seçimi"
+msgstr "Gösterge Tablosu Grafiği Seç"
 
 msgid "Select All Rows"
 msgstr "Tüm Satırları Seç"
 
 msgid "Unselect All Rows"
-msgstr "Tüm Satırların Seçimini Kaldır"
+msgstr "Tüm Satırları Seçimden Kaldır"
 
 msgid "Charts"
 msgstr "Grafikler"
@@ -9042,7 +9332,7 @@ msgid "All Notifications"
 msgstr "Tüm Bildirimler"
 
 msgid "Clear all"
-msgstr "Hepsini Temizle"
+msgstr "Tümünü Temizle"
 
 msgid "My Profile"
 msgstr "Profilim"
@@ -9050,17 +9340,41 @@ msgstr "Profilim"
 msgid "Logout"
 msgstr "Çıkış Yap"
 
+msgid "Go To Home"
+msgstr "Ana Sayfaya Git"
+
+msgid "Database Authentication"
+msgstr "Veritabanı Kimlik Doğrulama"
+
+msgid "Authenticate with your password to initialize the Horilla HRMS database."
+msgstr "Horilla HRMS veritabanını başlatmak için şifrenizle kimlik doğrulaması yapın."
+
+msgid "Authenticate"
+msgstr "Kimlik Doğrulama"
+
+msgid "Sign Up"
+msgstr "Kayıt Ol"
+
+msgid "Please sign up to access the Horilla HRMS."
+msgstr "Horilla HRMS'e erişmek için kayıt olun."
+
+msgid "Secure Sign-up"
+msgstr "Güvenli Kayıt"
+
 msgid "Sign In"
 msgstr "Giriş Yap"
 
 msgid "Please login to access the dashboard."
-msgstr "Gösterge paneline erişmek için lütfen giriş yapın."
+msgstr "Gösterge tablosuna erişmek için giriş yapın."
 
 msgid "Secure Sign-in"
 msgstr "Güvenli Giriş"
 
+msgid "Initialize Database"
+msgstr "Veritabanını Başlat"
+
 msgid "ago by"
-msgstr "önce"
+msgstr "önce tarafından"
 
 msgid "View all notifications"
 msgstr "Tüm bildirimleri görüntüle"
@@ -9087,10 +9401,10 @@ msgid "Reset Password"
 msgstr "Şifreyi Sıfırla"
 
 msgid "Enter your new password to reset"
-msgstr "Şifreyi sıfırlamak için yeni şifrenizi girin"
+msgstr "Şifrenizi sıfırlamak için yeni şifrenizi girin"
 
 msgid "Confirm New Password"
-msgstr "Yeni Şifreyi Onaylayın"
+msgstr "Yeni Şifreyi Onayla"
 
 msgid "Reset my password"
 msgstr "Şifremi sıfırla"
@@ -9116,35 +9430,44 @@ msgstr "Tarih ve Saat Formatı"
 msgid "Base"
 msgstr "Temel"
 
-msgid "Department Managers"
-msgstr "Departman Yöneticileri"
-
 msgid "Candidate Reject Reason"
 msgstr "Aday Reddetme Nedeni"
 
 msgid "Disciplinary Action Type"
-msgstr "Disiplin İşlem Türü"
+msgstr "Disiplin Eylem Türü"
+
+msgid "Track Late Come & Early Out"
+msgstr "Geç Gelme ve Erken Çıkışları Takip Et"
 
 msgid "Attendance Break Point"
 msgstr "Katılım Kesme Noktası"
 
+msgid "Restrictions"
+msgstr "Kısıtlamalar"
+
+msgid "Payslip Auto Generation"
+msgstr "Maaş Bordrosu Otomatik Oluşturma"
+
 msgid "Help Desk"
 msgstr "Yardım Masası"
+
+msgid "Department Managers"
+msgstr "Departman Yöneticileri"
 
 msgid "My Company"
 msgstr "Şirketim"
 
 msgid "Dashboard"
-msgstr "Gösterge Paneli"
+msgstr "Gösterge Tablosu"
 
 msgid "Configuration"
 msgstr "Yapılandırma"
 
 msgid "Multiple Approvals "
-msgstr "Çoklu Onaylar"
+msgstr "Birden Fazla Onay"
 
 msgid "Mail Automations"
-msgstr "E-posta Otomasyonları"
+msgstr "Posta Otomasyonları"
 
 msgid "Invalid File"
 msgstr "Geçersiz Dosya"
