@@ -8771,12 +8771,6 @@ msgstr "Taşı"
 msgid "Interviews Scheduled"
 msgstr "Planlanmış Mülakatlar"
 
-msgid "Added In Rejected Candidates"
-msgstr "Reddedilen Adaylara Eklendi"
-
-msgid "Add To Rejected Candidates"
-msgstr "Reddedilen Adaylara Ekle"
-
 msgid "View Note"
 msgstr "Notu Görüntüle"
 
