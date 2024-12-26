@@ -9459,3 +9459,18 @@ msgstr "Lütfen geçerli bir XLSX dosyası yükleyin."
 
 msgid "Progress"
 msgstr "İlerleme"
+
+msgid "Recruitment Pipeline"
+msgstr "İşe Alım Boru Hattı"
+
+msgid "Recruitment Survey"
+msgstr "İşe Alım Anketi"
+
+msgid "Skill Zones"
+msgstr "Beceri Alanları"
+
+msgid "Onboarding View"
+msgstr "Yerleşim Görünümü"
+
+msgid "Candidates View"
+msgstr "Adaylar Görünümü"
