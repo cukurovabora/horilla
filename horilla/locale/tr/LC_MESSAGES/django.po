@@ -8777,9 +8777,6 @@ msgstr "Notu Görüntüle"
 msgid "Resume"
 msgstr "Özgeçmiş"
 
-msgid "Actions"
-msgstr "Eylemler"
-
 msgid "Add Recruitment"
 msgstr "İşe Alım Ekle"
 
@@ -8973,9 +8970,6 @@ msgstr "Eklendiği Tarih"
 msgid "Do you want to remove this candidate"
 msgstr "Bu adayı kaldırmak istiyor musunuz?"
 
-msgid "Reason"
-msgstr "Sebep"
-
 msgid "You have no Candidate."
 msgstr "Hiç adayınız yok."
 
@@ -8987,9 +8981,6 @@ msgstr "Aşamaları Görüntüle"
 
 msgid "Add Stage"
 msgstr "Aşama Ekle"
-
-msgid "This field is required"
-msgstr "Bu alan gereklidir"
 
 msgid "interview"
 msgstr "Mülakat"
@@ -9038,9 +9029,6 @@ msgstr "Şablonlar"
 
 msgid "Create template group"
 msgstr "Şablon Grubu Oluştur"
-
-msgid "Are you sure want to delete?"
-msgstr "Silmek istediğinizden emin misiniz?"
 
 msgid "Mandatory Question"
 msgstr "Zorunlu Soru"
