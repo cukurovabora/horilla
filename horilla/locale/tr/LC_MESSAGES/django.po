@@ -1948,7 +1948,7 @@ msgid ""
 "condition field is Leave Requested Days."
 msgstr ""
 "Koşul alanı Talep Edilen İzin Günleri olduğunda geçerli bir sayısal "
-değer giriniz."
+"değer giriniz."
 
 msgid "Please specify condition value range"
 msgstr "Lütfen koşul değeri aralığını belirtiniz."
@@ -4059,6 +4059,7 @@ msgstr "Vardiya talebi iptal edildi."
 msgid "Shift has been approved."
 msgstr "Vardiya onaylandı."
 
+#, fuzzy
 msgid "An approved shift request already exists during this time period."
 msgstr "Bu zaman aralığında zaten onaylanmış bir vardiya talebi mevcut."
 
@@ -6935,6 +6936,7 @@ msgstr "Bu talebi reddetmek istediğinizden emin misiniz?"
 msgid "Resignations"
 msgstr "İstifalar"
 
+#, fuzzy
 msgid "Send Mail"
 msgstr "Mail Gönder"
 
@@ -7256,6 +7258,7 @@ msgstr "Portal Durumu"
 msgid "Bulk Change Task"
 msgstr "Toplu Görev Değişikliği"
 
+#, fuzzy
 msgid "Send mail"
 msgstr "E-posta Gönder"
 
