@@ -24,7 +24,7 @@ function getCookie(name) {
 
 function getCurrentLanguageCode(callback) {
 	var languageCode = $("#main-section-data").attr("data-lang");
-	var allowedLanguageCodes = ["ar", "de", "es", "en", "fr"];
+	var allowedLanguageCodes = ["en", "tr"];
 	if (allowedLanguageCodes.includes(languageCode)) {
 		callback(languageCode);
 	} else {

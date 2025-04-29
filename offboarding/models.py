@@ -287,6 +287,7 @@ class EmployeeTask(HorillaModel):
             request.user.employee_get,
             recipient=self.employee_id.employee_id.employee_user_id,
             verb=f'Offboarding task "{self.task_id.title}" has been assigned',
+            verb_tr=f"",
             verb_ar=f"",
             verb_de=f"",
             verb_es=f"",

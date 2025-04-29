@@ -525,6 +525,7 @@ def document_request_create(request):
                 request.user.employee_get,
                 recipient=employees,
                 verb=f"{request.user.employee_get} requested a document.",
+                verb_tr=f"{request.user.employee_get} bir belge talep etti.",
                 verb_ar=f"طلب {request.user.employee_get} مستنداً.",
                 verb_de=f"{request.user.employee_get} hat ein Dokument angefordert.",
                 verb_es=f"{request.user.employee_get} solicitó un documento.",
@@ -727,6 +728,7 @@ def file_upload(request, id):
                     request.user.employee_get,
                     recipient=request.user.employee_get.get_reporting_manager().employee_user_id,
                     verb=f"{request.user.employee_get} uploaded a document",
+                    verb_tr=f"{request.user.employee_get} bir belge yükledi.",
                     verb_ar=f"قام {request.user.employee_get} بتحميل مستند",
                     verb_de=f"{request.user.employee_get} hat ein Dokument hochgeladen",
                     verb_es=f"{request.user.employee_get} subió un documento",
@@ -1403,6 +1405,7 @@ def employee_view_update(request, obj_id, **kwargs):
                         request.user.employee_get,
                         recipient=instance.employee_id.employee_user_id,
                         verb="Your work details has been updated.",
+                        verb_tr="Çalışma detaylarınız güncellendi.",
                         verb_ar="تم تحديث تفاصيل عملك.",
                         verb_de="Ihre Arbeitsdetails wurden aktualisiert.",
                         verb_es="Se han actualizado los detalles de su trabajo.",
@@ -1560,6 +1563,7 @@ def employee_create_update_personal_info(request, obj_id=None):
     """
     This method is used to update employee's personal info.
     """
+    print(request)
     employee = Employee.objects.filter(id=obj_id).first()
     form = EmployeeForm(request.POST, instance=employee)
     if form.is_valid():
@@ -1577,6 +1581,9 @@ def employee_create_update_personal_info(request, obj_id=None):
                     employee_id=employee
                 ).first()
             )
+            print("form",form)
+            print("work_form",work_form)
+            print("bank_form",bank_form)
             return redirect(
                 f"employee-view-update/{form.instance.id}/",
                 data={"form": form, "work_form": work_form, "bank_form": bank_form},

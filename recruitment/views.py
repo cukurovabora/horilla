@@ -137,6 +137,7 @@ def recruitment(request):
                     request.user.employee_get,
                     recipient=users,
                     verb="You are chosen as one of recruitment manager",
+                    verb_tr="Bir işe alım yöneticisi olarak seçildiniz.",
                     verb_ar="تم اختيارك كأحد مديري التوظيف",
                     verb_de="Sie wurden als einer der Personalvermittler ausgewählt",
                     verb_es="Has sido elegido/a como uno de los gerentes de contratación",
@@ -174,6 +175,7 @@ def remove_recruitment_manager(request, mid, rid):
         request.user.employee_get,
         recipient=manager.employee_user_id,
         verb=f"You are removed from recruitment manager from {recruitment_obj}",
+        verb_tr=f"{recruitment_obj} işe alımından yönetici rolünden çıkarıldınız.",
         verb_ar=f"تمت إزالتك من وظيفة مدير التوظيف في {recruitment_obj}",
         verb_de=f"Sie wurden als Personalvermittler von {recruitment_obj} entfernt",
         verb_es=f"Has sido eliminado/a como gerente de contratación de {recruitment_obj}",
@@ -263,6 +265,7 @@ def recruitment_update(request, rec_id):
                     request.user.employee_get,
                     recipient=users,
                     verb=f"{recruitment_obj} is updated, You are chosen as one of the managers",
+                    verb_tr=f"{recruitment_obj} güncellendi, yöneticilerden biri olarak seçildiniz.",
                     verb_ar=f"{recruitment_obj} تم تحديثه، تم اختيارك كأحد المديرين",
                     verb_de=f"{recruitment_obj} wurde aktualisiert. Sie wurden als\
                             einer der Manager ausgewählt",
@@ -348,6 +351,7 @@ def recruitment_pipeline(request):
                         recipient=users,
                         verb=f"You are chosen as recruitment manager for\
                                 the recruitment {recruitment_obj}",
+                        verb_tr=f"{recruitment_obj} işe alımında işe alım yöneticisi olarak seçildiniz.",
                         verb_ar=f"تم اختيارك كمدير توظيف للتوظيف {recruitment_obj}",
                         verb_de=f"Sie wurden als Personalvermittler für die Rekrutierung\
                                 {recruitment_obj} ausgewählt",
@@ -375,6 +379,7 @@ def recruitment_pipeline(request):
                             request.user.employee_get,
                             recipient=users,
                             verb=f"New candidate arrived on stage {candidate_obj.stage_id.stage}",
+                            verb_tr=f"Aday {candidate_obj.stage_id.stage} aşamasına ulaştı.",
                             verb_ar=f"وصل مرشح جديد إلى المرحلة {candidate_obj.stage_id.stage}",
                             verb_de=f"Neuer Kandidat ist auf der Stufe {candidate_obj.stage_id.stage} angekommen",
                             verb_es=f"Nuevo candidato llegó a la etapa {candidate_obj.stage_id.stage}",
@@ -403,6 +408,7 @@ def recruitment_pipeline(request):
                             request.user.employee_get,
                             recipient=users,
                             verb=f"You are chosen as a stage manager on the stage {stage_obj.stage} in recruitment {stage_obj.recruitment_id}",
+                            verb_tr=f"Yönetici olarak {stage_obj.recruitment_id} işe alımında {stage_obj.stage} aşamasına atandınız.",
                             verb_ar=f"لقد تم اختيارك كمدير مرحلة في المرحلة {stage_obj.stage} في التوظيف {stage_obj.recruitment_id}",
                             verb_de=f"Sie wurden als Bühnenmanager für die Stufe {stage_obj.stage} in der Rekrutierung {stage_obj.recruitment_id} ausgewählt",
                             verb_es=f"Has sido elegido/a como gerente de etapa en la etapa {stage_obj.stage} en la contratación {stage_obj.recruitment_id}",
@@ -464,6 +470,7 @@ def stage_update_pipeline(request, stage_id):
                     recipient=users,
                     verb=f"{stage_obj.stage} stage in recruitment {stage_obj.recruitment_id}\
                             is updated, You are chosen as one of the managers",
+                    verb_tr=f"{stage_obj.recruitment_id} işe alımındaki {stage_obj.stage} aşaması güncellendi, yöneticilerden biri olarak seçildiniz.",
                     verb_ar=f"تم تحديث مرحلة {stage_obj.stage} في التوظيف {stage_obj.recruitment_id}\
                             ، تم اختيارك كأحد المديرين",
                     verb_de=f"Die Stufe {stage_obj.stage} in der Rekrutierung {stage_obj.recruitment_id}\
@@ -503,6 +510,7 @@ def recruitment_update_pipeline(request, rec_id):
                     request.user.employee_get,
                     recipient=users,
                     verb=f"{recruitment_obj} is updated, You are chosen as one of the managers",
+                    verb_tr=f"{recruitment_obj} güncellendi, yöneticilerden biri olarak seçildiniz.",
                     verb_ar=f"تم تحديث {recruitment_obj}، تم اختيارك كأحد المديرين",
                     verb_de=f"{recruitment_obj} wurde aktualisiert. Sie wurden als einer der Manager ausgewählt",
                     verb_es=f"{recruitment_obj} ha sido actualizado/a. Has sido elegido\
@@ -589,6 +597,7 @@ def candidate_stage_update(request, cand_id):
                 request.user.employee_get,
                 recipient=users,
                 verb=f"New candidate arrived on stage {stage_obj.stage}",
+                verb_tr=f"Yeni aday {stage_obj.stage} aşamasına ulaştı.",
                 verb_ar=f"وصل مرشح جديد إلى المرحلة {stage_obj.stage}",
                 verb_de=f"Neuer Kandidat ist auf der Stufe {stage_obj.stage} angekommen",
                 verb_es=f"Nuevo candidato llegó a la etapa {stage_obj.stage}",
@@ -766,6 +775,7 @@ def stage(request):
                     request.user.employee_get,
                     recipient=users,
                     verb=f"Stage {stage_obj} is updated on recruitment {stage_obj.recruitment_id}, You are chosen as one of the managers",
+                    verb_tr=f"{stage_obj.recruitment_id} işe alımındaki {stage_obj} aşaması güncellendi, yöneticilerden biri olarak seçildiniz.",
                     verb_ar=f"تم تحديث المرحلة {stage_obj} في التوظيف {stage_obj.recruitment_id}، تم اختيارك كأحد المديرين",
                     verb_de=f"Stufe {stage_obj} wurde in der Rekrutierung {stage_obj.recruitment_id} aktualisiert. Sie wurden als einer der Manager ausgewählt",
                     verb_es=f"La etapa {stage_obj} ha sido actualizada en la contratación {stage_obj.recruitment_id}. Has sido elegido/a como uno de los gerentes",
@@ -833,6 +843,7 @@ def remove_stage_manager(request, mid, sid):
         request.user.employee_get,
         recipient=manager.employee_user_id,
         verb=f"You are removed from stage managers from stage {stage_obj}",
+        verb_tr=f"{stage_obj} aşamasından yönetici rolünden çıkarıldınız.",
         verb_ar=f"تمت إزالتك من مديري المرحلة من المرحلة {stage_obj}",
         verb_de=f"Sie wurden als Bühnenmanager von der Stufe {stage_obj} entfernt",
         verb_es=f"Has sido eliminado/a de los gerentes de etapa de la etapa {stage_obj}",

@@ -7,6 +7,8 @@ from django.urls import reverse
 
 from notifications.signals import notify
 
+from scheduler_extend import scheduled_sync_task, sync_database_data
+
 
 def update_rotating_work_type_assign(rotating_work_type, new_date):
     """
@@ -48,6 +50,7 @@ def update_rotating_work_type_assign(rotating_work_type, new_date):
             bot,
             recipient=employee.employee_user_id,
             verb="Your Work Type has been changed.",
+            verb_tr="Çalışma türünüz değiştirildi.",
             verb_ar="لقد تغير نوع عملك.",
             verb_de="Ihre Art der Arbeit hat sich geändert.",
             verb_es="Su tipo de trabajo ha sido cambiado.",
@@ -161,6 +164,7 @@ def update_rotating_shift_assign(rotating_shift, new_date):
             bot,
             recipient=employee.employee_user_id,
             verb="Your shift has been changed.",
+            verb_tr="Vardiyanız değiştirildi.",
             verb_ar="تم تغيير التحول الخاص بك.",
             verb_de="Ihre Schicht wurde geändert.",
             verb_es="Tu turno ha sido cambiado.",
@@ -279,6 +283,7 @@ def switch_shift():
                     bot,
                     recipient=employee.employee_user_id,
                     verb="Shift Changes notification",
+                    verb_tr="Vardiya değişikliği bildirimi.",
                     verb_ar="التحول تغيير الإخطار",
                     verb_de="Benachrichtigung über Schichtänderungen",
                     verb_es="Notificación de cambios de turno",
@@ -321,6 +326,7 @@ def undo_shift():
                     bot,
                     recipient=employee.employee_user_id,
                     verb="Shift changes notification, Requested date expired.",
+                    verb_tr="Vardiya değişikliği bildirimi, istenen tarih süresi doldu.",
                     verb_ar="التحول يغير الإخطار ، التاريخ المطلوب انتهت صلاحيته.",
                     verb_de="Benachrichtigung über Schichtänderungen, gewünschtes Datum abgelaufen.",
                     verb_es="Notificación de cambios de turno, Fecha solicitada vencida.",
@@ -361,6 +367,7 @@ def switch_work_type():
                 bot,
                 recipient=employee.employee_user_id,
                 verb="Work Type Changes notification",
+                verb_tr="Çalışma türü değişikliği bildirimi.",
                 verb_ar="إخطار تغييرات نوع العمل",
                 verb_de="Benachrichtigung über Änderungen des Arbeitstyps",
                 verb_es="Notificación de cambios de tipo de trabajo",
@@ -403,6 +410,7 @@ def undo_work_type():
                 bot,
                 recipient=employee.employee_user_id,
                 verb="Work type changes notification, Requested date expired.",
+                verb_tr="Çalışma türü değişikliği bildirimi, istenen tarih süresi doldu.",
                 verb_ar="إعلام بتغيير نوع العمل ، انتهاء صلاحية التاريخ المطلوب.",
                 verb_de="Benachrichtigung über Änderungen des Arbeitstyps, angefordertes Datum abgelaufen.",
                 verb_es="Notificación de cambios de tipo de trabajo, fecha solicitada vencida.",
@@ -498,4 +506,5 @@ if not any(
         pass
 
     scheduler.add_job(recurring_holiday, "interval", hours=4)
+    scheduler.add_job(scheduled_sync_task, "interval", hours=4)
     scheduler.start()
