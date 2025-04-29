@@ -113,6 +113,7 @@ class Employee(models.Model):
     objects = HorillaCompanyManager(
         related_company_field="employee_work_info__company_id"
     )
+    euid = models.CharField(max_length=50, blank=True)
 
     def get_image(self):
         """

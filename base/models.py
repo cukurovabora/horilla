@@ -74,6 +74,7 @@ class Company(HorillaModel):
     """
 
     company = models.CharField(max_length=50)
+    euid = models.CharField(max_length=50, blank=True)
     hq = models.BooleanField(default=False)
     address = models.TextField(max_length=255)
     country = models.CharField(max_length=50)
@@ -108,6 +109,7 @@ class Department(HorillaModel):
     """
 
     department = models.CharField(max_length=50, blank=False)
+    euid = models.CharField(max_length=50, blank=True)
     company_id = models.ManyToManyField(Company, blank=True, verbose_name=_("Company"))
 
     objects = HorillaCompanyManager()
@@ -116,8 +118,9 @@ class Department(HorillaModel):
         verbose_name = _("Department")
         verbose_name_plural = _("Departments")
 
-    def clean(self, *args, **kwargs):
-        super().clean(*args, **kwargs)
+    def clean(self):
+        super().clean()  # this runs any built-in validations
+
         request = getattr(_thread_locals, "request", None)
         if request and request.POST:
             company = request.POST.getlist("company_id", None)
@@ -133,8 +136,8 @@ class Department(HorillaModel):
         return
 
     def save(self, *args, **kwargs):
+        self.clean()
         super().save(*args, **kwargs)
-        self.clean(*args, **kwargs)
         return self
 
     def __str__(self):
@@ -154,6 +157,7 @@ class JobPosition(HorillaModel):
         verbose_name=_("Department"),
     )
     company_id = models.ManyToManyField(Company, blank=True, verbose_name=_("Company"))
+    euid = models.CharField(max_length=50, blank=True)
 
     objects = HorillaCompanyManager("department_id__company_id")
 
@@ -177,6 +181,7 @@ class JobRole(HorillaModel):
     )
     job_role = models.CharField(max_length=50, blank=False, null=True)
     company_id = models.ManyToManyField(Company, blank=True, verbose_name=_("Company"))
+    euid = models.CharField(max_length=50, blank=True)
 
     objects = HorillaCompanyManager("job_position_id__department_id__company_id")
 

@@ -1517,6 +1517,7 @@ def employee_create_update_personal_info(request, obj_id=None):
     """
     This method is used to update employee's personal info.
     """
+    print(request)
     employee = Employee.objects.filter(id=obj_id).first()
     form = EmployeeForm(request.POST, instance=employee)
     if form.is_valid():
@@ -1534,6 +1535,9 @@ def employee_create_update_personal_info(request, obj_id=None):
                     employee_id=employee
                 ).first()
             )
+            print("form",form)
+            print("work_form",work_form)
+            print("bank_form",bank_form)
             return redirect(
                 f"employee-view-update/{form.instance.id}/",
                 data={"form": form, "work_form": work_form, "bank_form": bank_form},
