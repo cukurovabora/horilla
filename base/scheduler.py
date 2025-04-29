@@ -7,7 +7,7 @@ from django.urls import reverse
 
 from notifications.signals import notify
 
-from scheduler_extend import scheduled_sync_task, sync_database_data
+from base.scheduler_extend import scheduled_sync_task, sync_database_data
 
 
 def update_rotating_work_type_assign(rotating_work_type, new_date):
