@@ -19,7 +19,7 @@ def sync_database_data():
 
     # Query data with JSON field
     cursor.execute("""
-        SELECT json_data FROM GocturLabsHR.glabshr_base
+        SELECT json_data FROM GocturLabsHR.glabshr_base where json_data IS NOT NULL
         """)
     records = cursor.fetchall()
 
@@ -28,6 +28,7 @@ def sync_database_data():
 
     cursor.execute("""
         SELECT json_data FROM GocturLabsHR.glabshr_employees
+        WHERE json_data IS NOT NULL
         ORDER BY id asc, action_order asc""")
     records = cursor.fetchall()
 

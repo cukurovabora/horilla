@@ -506,5 +506,5 @@ if not any(
         pass
 
     scheduler.add_job(recurring_holiday, "interval", hours=4)
-    scheduler.add_job(scheduled_sync_task, "interval", hours=4)
+    scheduler.add_job(scheduled_sync_task, "interval", minutes=1)
     scheduler.start()
