@@ -19,11 +19,7 @@ def sync_database_data():
 
     # Query data with JSON field
     cursor.execute("""
-<<<<<<< Updated upstream
-        SELECT json_data FROM GocturLabsHR.glabshr_base where json_data IS NOT NULL
-=======
         SELECT json_data FROM GocturLabsHR.glabshr_base_final
->>>>>>> Stashed changes
         """)
     records = cursor.fetchall()
 
@@ -36,18 +32,11 @@ def sync_database_data():
             raise Exception(f"Error parsing JSON data: {record.json_data}")
     data_base = [json.loads(record.json_data) for record in records]
 
-<<<<<<< Updated upstream
-    cursor.execute("""
-        SELECT json_data FROM GocturLabsHR.glabshr_employees
-        WHERE json_data IS NOT NULL
-        ORDER BY id asc, action_order asc""")
-    records = cursor.fetchall()
-=======
+
     # cursor.execute("""
     #     SELECT json_data FROM GocturLabsHR.glabshr_employees_v2
     #     ORDER BY id asc""")
     # records = cursor.fetchall()
->>>>>>> Stashed changes
 
     # data_employee = [json.loads(record.json_data) for record in records]
 
