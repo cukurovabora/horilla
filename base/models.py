@@ -221,7 +221,7 @@ class WorkType(HorillaModel):
         return str(self.work_type)
 
     def clean(self, *args, **kwargs):
-        super().clean(*args, **kwargs)
+        super().clean()
         request = getattr(_thread_locals, "request", None)
         if request and request.POST:
             company = request.POST.getlist("company_id", None)
@@ -454,7 +454,7 @@ class EmployeeType(HorillaModel):
         return str(self.employee_type)
 
     def clean(self, *args, **kwargs):
-        super().clean(*args, **kwargs)
+        super().clean()
         request = getattr(_thread_locals, "request", None)
         if request and request.POST:
             company = request.POST.getlist("company_id", None)
@@ -545,7 +545,7 @@ class EmployeeShift(HorillaModel):
         return str(self.employee_shift)
 
     def clean(self, *args, **kwargs):
-        super().clean(*args, **kwargs)
+        super().clean()
         request = getattr(_thread_locals, "request", None)
         if request and request.POST:
             company = request.POST.getlist("company_id", None)

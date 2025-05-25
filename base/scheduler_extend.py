@@ -258,7 +258,7 @@ def scheduled_sync_task_bulk():
 
             # except Exception as e:
             #     print(f"❌ Error processing entry {entry['model']} {entry['pk']}: {e}")
-            #     import time
-            #     time.sleep(100000)
+                # import time
+                # time.sleep(100000)
 
     print("✅ Sync complete.")
