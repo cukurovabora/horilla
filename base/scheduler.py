@@ -7,7 +7,15 @@ from django.urls import reverse
 
 from notifications.signals import notify
 
-from base.scheduler_extend import scheduled_sync_task, sync_database_data
+try:
+    from base.scheduler_extend import scheduled_sync_task, sync_database_data, scheduled_sync_task_bulk
+except ImportError:
+    def scheduled_sync_task():
+        pass
+    def sync_database_data():
+        pass
+    def scheduled_sync_task_bulk():
+        pass
 
 
 def update_rotating_work_type_assign(rotating_work_type, new_date):
@@ -505,6 +513,16 @@ if not any(
     except:
         pass
 
+    print("Scheduler started")
     scheduler.add_job(recurring_holiday, "interval", hours=4)
+<<<<<<< Updated upstream
     scheduler.add_job(scheduled_sync_task, "interval", minutes=1)
+=======
+    scheduler.add_job(
+        scheduled_sync_task_bulk,
+        trigger='cron',
+        hour='3,7,11,15,19,23',
+        minute=0
+    )
+>>>>>>> Stashed changes
     scheduler.start()

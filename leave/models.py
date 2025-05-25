@@ -286,7 +286,7 @@ class LeaveType(HorillaModel):
             and self.carryforward_max is None
         ):
             self.carryforward_max = math.inf
-        if self.pk and LeaveType.objects.get(id=self.pk).is_compensatory_leave:
+        if self.pk and self.is_compensatory_leave:
             self.is_compensatory_leave = True
 
         if (

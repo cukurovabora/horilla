@@ -71,7 +71,7 @@ class Company(HorillaModel):
     """
 
     company = models.CharField(max_length=50)
-    euid = models.CharField(max_length=50, blank=True)
+    euid = models.CharField(max_length=50, blank=True, unique=True)
     hq = models.BooleanField(default=False)
     address = models.TextField(max_length=255)
     country = models.CharField(max_length=50)
@@ -106,7 +106,7 @@ class Department(HorillaModel):
     """
 
     department = models.CharField(max_length=50, blank=False)
-    euid = models.CharField(max_length=50, blank=True)
+    euid = models.CharField(max_length=50, blank=True, unique=True)
     company_id = models.ManyToManyField(Company, blank=True, verbose_name=_("Company"))
 
     objects = HorillaCompanyManager()
@@ -156,7 +156,7 @@ class JobPosition(HorillaModel):
         verbose_name=_("Department"),
     )
     company_id = models.ManyToManyField(Company, blank=True, verbose_name=_("Company"))
-    euid = models.CharField(max_length=50, blank=True)
+    euid = models.CharField(max_length=50, blank=True, unique=True)
 
     objects = HorillaCompanyManager("department_id__company_id")
 
@@ -182,7 +182,7 @@ class JobRole(HorillaModel):
         max_length=50, blank=False, null=True, verbose_name=_("Job Role")
     )
     company_id = models.ManyToManyField(Company, blank=True, verbose_name=_("Company"))
-    euid = models.CharField(max_length=50, blank=True)
+    euid = models.CharField(max_length=50, blank=True, unique=True)
 
     objects = HorillaCompanyManager("job_position_id__department_id__company_id")
 
