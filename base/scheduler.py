@@ -515,14 +515,10 @@ if not any(
 
     print("Scheduler started")
     scheduler.add_job(recurring_holiday, "interval", hours=4)
-<<<<<<< Updated upstream
-    scheduler.add_job(scheduled_sync_task, "interval", minutes=1)
-=======
     scheduler.add_job(
         scheduled_sync_task_bulk,
         trigger='cron',
         hour='3,7,11,15,19,23',
         minute=0
     )
->>>>>>> Stashed changes
     scheduler.start()
