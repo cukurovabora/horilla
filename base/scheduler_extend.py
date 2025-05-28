@@ -117,13 +117,14 @@ def sync_phase_data(phase):
                             print(f"⚠️ FK {field.name} with id={fields[field.name]} missing for {model_path}, pk={pk}")
                             fields[field.name] = None
 
-            try:
+            # try:
+            if True:
                 with transaction.atomic():
                     obj, created = model.objects.update_or_create(pk=pk, defaults=fields)
                     for field_name, ids in m2m_fields.items():
                         getattr(obj, field_name).set(ids)
-            except Exception as e:
-                print(f"❌ Error saving {model_path} pk={pk}: {e}")
+            # except Exception as e:
+            #     print(f"❌ Error saving {model_path} pk={pk}: {e}")
 
     # Update processed rows
     conn = pyodbc.connect(
