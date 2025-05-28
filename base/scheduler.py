@@ -8,12 +8,8 @@ from django.urls import reverse
 from notifications.signals import notify
 
 try:
-    from base.scheduler_extend import scheduled_sync_task, sync_database_data, scheduled_sync_task_bulk
+    from base.scheduler_extend import scheduled_sync_task_bulk
 except ImportError:
-    def scheduled_sync_task():
-        pass
-    def sync_database_data():
-        pass
     def scheduled_sync_task_bulk():
         pass
 
