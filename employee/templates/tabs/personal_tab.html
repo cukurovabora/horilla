@@ -1,5 +1,6 @@
 {% load i18n %} {% load static %} {% load horillafilters %}
 <div class="row">
+	{% if request.user.employee_get.id == employee.id or perms.employee.change_employee %}
 	<div class="col-sm-12 col-md-12 col-lg-4">
 		<div class="oh-card oh-card--margin">
 			<div class="oh-card__header">
@@ -119,6 +120,7 @@
 			</div>
 		</div>
 	</div>
+	{% endif %}
 	<div class="col-sm-12 col-md-12 col-lg-8">
 		<div class="oh-card oh-card--margin">
 			<div class="oh-tabs">

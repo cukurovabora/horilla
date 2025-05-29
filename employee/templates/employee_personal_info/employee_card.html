@@ -6,14 +6,14 @@
 
 <span name="" id="filterEmployee" style="display: none" hx-get="{% url 'employee-filter-view' %}?{{pd}}" hx-target="#view-container"></span>
 <div class="d-flex flex-row-reverse m-2">
-  <span class="" onclick="$('[name=working_today]').val('false'); $('[name=working_today]').first().change(); $('.filterButton').click()" style="cursor: pointer;margin-left: 10px;">
+  <!-- <span class="" onclick="$('[name=working_today]').val('false'); $('[name=working_today]').first().change(); $('.filterButton').click()" style="cursor: pointer;margin-left: 10px;">
     <span class="oh-dot oh-dot--small me-1" style="background-color:rgba(128, 128, 128, 0.482)"></span>
     {% trans "Offline" %}
   </span>
   <span class="me-3" onclick="$('[name=working_today]').val('true'); $('[name=working_today]').first().change(); $('.filterButton').click()" style="cursor: pointer;margin-left: 10px;">
     <span class="oh-dot oh-dot--small me-1" style="background-color:yellowgreen"></span>
     {% trans "Online" %}
-  </span>
+  </span> -->
 </div>
 <div id="relatedModel"></div>
 {% if messages %}
@@ -59,16 +59,16 @@
 
           <div class="oh-kanban-card__details">
             <span class="oh-kanban-card__title" {% if emp.email|length >= 30 %}title = "{{emp}}" {% endif %}>{{emp|truncatechars:30}}</span>
-            <span class="oh-kanban-card__subtitle" {% if emp.email|length >= 35 %}title = "{{emp.email}}" {% endif %}>{{emp.email|truncatechars:35}}</span><br>
+            <!-- <span class="oh-kanban-card__subtitle" {% if emp.email|length >= 35 %}title = "{{emp.email}}" {% endif %}>{{emp.email|truncatechars:35}}</span><br> -->
             <span class="oh-kanban-card__subtitle">{{emp.employee_work_info.job_position_id}}</span>
             <div class="oh-kanban-card__subtitle">
-              {% if "attendance"|app_installed %}
+              <!-- {% if "attendance"|app_installed %}
                 {% if emp.check_online %}
                   <span class="oh-dot oh-dot--small me-1" style="background-color:yellowgreen"></span> {% trans "Online" %}
                 {% else %}
                   <span class="oh-dot oh-dot--small me-1" style="background-color:rgba(128, 128, 128, 0.482)"></span> {% trans "Offline" %}
                 {% endif %}
-              {% endif %}
+              {% endif %} -->
             </div>
           </div>
 
