@@ -251,7 +251,13 @@
 							<ion-icon name="mail-outline"></ion-icon>
 							<span>{% trans "Work Email" %}:</span>
 						</span>
-						<span class="oh-profile__info-value">{{employee.employee_work_info.email}}</span>
+						<span class="oh-profile__info-value">
+							{% if perms.employee.view_employee or request.user == employee.employee_user_id %}
+							{{employee.employee_work_info.email}}
+							{% else %}
+							**********
+							{% endif %}
+						</span>
 					</li>
 
 					<li class="oh-profile__info-list-item">
@@ -273,7 +279,13 @@
 							<ion-icon name="call-outline"></ion-icon>
 							<span>{% trans "Work Phone" %}:</span>
 						</span>
-						<span class="oh-profile__info-value">{{employee.employee_work_info.mobile}}</span>
+						<span class="oh-profile__info-value">
+							{% if perms.employee.view_employee or request.user == employee.employee_user_id %}
+							{{employee.employee_work_info.mobile}}
+							{% else %}
+							**********
+							{% endif %}
+						</span>
 					</li>
 
 					<li class="oh-profile__info-list-item">
@@ -281,7 +293,8 @@
 							<ion-icon name="call-outline"></ion-icon>
 							<span>{% trans "Phone" %}:</span>
 						</span>
-						<span class="oh-profile__info-value">{% if perms.employee.view_employee or request.user == employee.employee_user_id %}
+						<span class="oh-profile__info-value">
+							{% if perms.employee.view_employee or request.user == employee.employee_user_id %}
 							{{employee.phone}}
 							{% else %}
 							**********
