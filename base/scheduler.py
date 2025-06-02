@@ -511,12 +511,12 @@ if not any(
 
     print("Scheduler started")
     scheduler.add_job(recurring_holiday, "interval", hours=4)
-    # scheduler.add_job(
-    #     scheduled_sync_task_bulk,
-    #     trigger='cron',
-    #     hour='4,5,6,7,8,9,10,11,12,13,14,15,16,17,18',
-    #     minute=0
-    # )
+    scheduler.add_job(
+        scheduled_sync_task_bulk,
+        trigger='cron',
+        hour='4,15',
+        minute=0
+    )
     # scheduler.add_job(
     #     scheduled_sync_task_bulk,
     #     "interval",
