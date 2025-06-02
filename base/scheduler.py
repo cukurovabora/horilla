@@ -514,7 +514,7 @@ if not any(
     scheduler.add_job(
         scheduled_sync_task_bulk,
         trigger='cron',
-        hour='4,15',
+        hour='4,6,8,10,12,14,16,18',
         minute=0
     )
     # scheduler.add_job(
