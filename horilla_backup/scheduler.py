@@ -12,7 +12,7 @@ from .models import *
 from .pgdump import *
 from .zip import *
 
-scheduler = BackgroundScheduler()
+# scheduler = BackgroundScheduler()
 
 # def backup_database():
 #     folder_path = DBBACKUP_STORAGE_OPTIONS['location']
@@ -81,75 +81,76 @@ scheduler = BackgroundScheduler()
 #     start_backup_job()
 
 
-def google_drive_backup():
-    if GoogleDriveBackup.objects.exists():
-        google_drive = GoogleDriveBackup.objects.first()
-        service_account_file = google_drive.service_account_file.path
-        gdrive_folder_id = google_drive.gdrive_folder_id
-        if google_drive.backup_db:
-            db = settings.DATABASES["default"]
-            dump_postgres_db(
-                db_name=db["NAME"],
-                username=db["USER"],
-                output_file="backupdb.dump",
-                password=db["PASSWORD"],
-            )
-            upload_file("backupdb.dump", service_account_file, gdrive_folder_id)
-            os.remove("backupdb.dump")
-        if google_drive.backup_media:
-            folder_to_zip = settings.MEDIA_ROOT
-            output_zip_file = "media.zip"
-            zip_folder(folder_to_zip, output_zip_file)
-            upload_file("media.zip", service_account_file, gdrive_folder_id)
-            os.remove("media.zip")
+# def google_drive_backup():
+#     if GoogleDriveBackup.objects.exists():
+#         google_drive = GoogleDriveBackup.objects.first()
+#         service_account_file = google_drive.service_account_file.path
+#         gdrive_folder_id = google_drive.gdrive_folder_id
+#         if google_drive.backup_db:
+#             db = settings.DATABASES["default"]
+#             dump_postgres_db(
+#                 db_name=db["NAME"],
+#                 username=db["USER"],
+#                 output_file="backupdb.dump",
+#                 password=db["PASSWORD"],
+#             )
+#             upload_file("backupdb.dump", service_account_file, gdrive_folder_id)
+#             os.remove("backupdb.dump")
+#         if google_drive.backup_media:
+#             folder_to_zip = settings.MEDIA_ROOT
+#             output_zip_file = "media.zip"
+#             zip_folder(folder_to_zip, output_zip_file)
+#             upload_file("media.zip", service_account_file, gdrive_folder_id)
+#             os.remove("media.zip")
 
 
-def start_gdrive_backup_job():
-    """
-    Start the backup job based on the LocalBackup configuration.
-    """
-    # Check if any Gdrive Backup object exists
-    if GoogleDriveBackup.objects.exists():
-        gdrive_backup = GoogleDriveBackup.objects.first()
+# def start_gdrive_backup_job():
+#     """
+#     Start the backup job based on the LocalBackup configuration.
+#     """
+#     # Check if any Gdrive Backup object exists
+#     if GoogleDriveBackup.objects.exists():
+#         gdrive_backup = GoogleDriveBackup.objects.first()
 
-        # Remove existing job if it exists
-        try:
-            scheduler.remove_job("backup_job")
-        except:
-            pass
-        # Add new job based on Gdrive Backup configuration
-        if gdrive_backup.interval:
-            scheduler.add_job(
-                google_drive_backup,
-                "interval",
-                seconds=gdrive_backup.seconds,
-                id="gdrive_backup_job",
-            )
-        else:
-            scheduler.add_job(
-                google_drive_backup,
-                trigger="cron",
-                hour=gdrive_backup.hour,
-                minute=gdrive_backup.minute,
-                id="gdrive_backup_job",
-            )
+#         # Remove existing job if it exists
+#         try:
+#             scheduler.remove_job("backup_job")
+#         except:
+#             pass
+#         # Add new job based on Gdrive Backup configuration
+#         if gdrive_backup.interval:
+#             scheduler.add_job(
+#                 google_drive_backup,
+#                 "interval",
+#                 seconds=gdrive_backup.seconds,
+#                 id="gdrive_backup_job",
+#             )
+#         else:
+#             scheduler.add_job(
+#                 google_drive_backup,
+#                 trigger="cron",
+#                 hour=gdrive_backup.hour,
+#                 minute=gdrive_backup.minute,
+#                 id="gdrive_backup_job",
+#             )
 
-        # Start the scheduler if it's not already running
-        if not scheduler.running:
-            # scheduler.start()
+#         # Start the scheduler if it's not already running
+#         if not scheduler.running:
+#             scheduler.start()
+#             pass
 
-    else:
-        stop_gdrive_backup_job()
+#     else:
+#         stop_gdrive_backup_job()
 
 
-def stop_gdrive_backup_job():
-    """
-    Stop the backup job if it exists.
-    """
-    try:
-        scheduler.remove_job("gdrive_backup_job")
-    except:
-        pass
+# def stop_gdrive_backup_job():
+#     """
+#     Stop the backup job if it exists.
+#     """
+#     try:
+#         scheduler.remove_job("gdrive_backup_job")
+#     except:
+#         pass
 
 
 # def restart_gdrive_backup_job():

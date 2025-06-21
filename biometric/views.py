@@ -2021,6 +2021,7 @@ try:
                         seconds=str_time_seconds(device.scheduler_duration),
                     )
                     # scheduler.start()
+                    pass
                 elif device.machine_type == "zk":
                     scheduler = BackgroundScheduler()
                     scheduler.add_job(
