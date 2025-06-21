@@ -47,4 +47,4 @@ if not any(
         create_work_record, "cron", hour=0, minute=30, misfire_grace_time=3600 * 9
     )
 
-    scheduler.start()
+    # scheduler.start()

@@ -57,4 +57,4 @@ if not any(
     scheduler = BackgroundScheduler()
     scheduler.add_job(leave_reset, "interval", seconds=20)
 
-    scheduler.start()
+    # scheduler.start()

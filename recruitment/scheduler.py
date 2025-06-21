@@ -58,4 +58,4 @@ if not any(
     scheduler.add_job(candidate_convert, "interval", seconds=10)
     scheduler.add_job(recruitment_close, "interval", hours=1)
 
-    scheduler.start()
+    # scheduler.start()

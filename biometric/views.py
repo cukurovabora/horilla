@@ -530,7 +530,7 @@ def biometric_device_schedule(request, device_id):
                         "interval",
                         seconds=str_time_seconds(device.scheduler_duration),
                     )
-                    scheduler.start()
+                    # scheduler.start()
                     return HttpResponse("<script>window.location.reload()</script>")
                 except Exception as error:
                     logger.error("An error comes in biometric_device_schedule ", error)
@@ -561,7 +561,7 @@ def biometric_device_schedule(request, device_id):
                     "interval",
                     seconds=str_time_seconds(device.scheduler_duration),
                 )
-                scheduler.start()
+                # scheduler.start()
                 return HttpResponse("<script>window.location.reload()</script>")
             else:
                 duration = request.POST.get("scheduler_duration")
@@ -579,7 +579,7 @@ def biometric_device_schedule(request, device_id):
                     "interval",
                     seconds=str_time_seconds(device.scheduler_duration),
                 )
-                scheduler.start()
+                # scheduler.start()
                 return HttpResponse("<script>window.location.reload()</script>")
 
         context["scheduler_form"] = scheduler_form
@@ -2020,7 +2020,7 @@ try:
                         "interval",
                         seconds=str_time_seconds(device.scheduler_duration),
                     )
-                    scheduler.start()
+                    # scheduler.start()
                 elif device.machine_type == "zk":
                     scheduler = BackgroundScheduler()
                     scheduler.add_job(
@@ -2028,7 +2028,7 @@ try:
                         "interval",
                         seconds=str_time_seconds(device.scheduler_duration),
                     )
-                    scheduler.start()
+                    # scheduler.start()
                 elif device.machine_type == "cosec":
                     scheduler = BackgroundScheduler()
                     scheduler.add_job(
@@ -2036,7 +2036,7 @@ try:
                         "interval",
                         seconds=str_time_seconds(device.scheduler_duration),
                     )
-                    scheduler.start()
+                    # scheduler.start()
                 else:
                     pass
 except:

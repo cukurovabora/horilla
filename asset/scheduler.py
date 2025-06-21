@@ -93,4 +93,4 @@ if not any(
     scheduler = BackgroundScheduler()
     scheduler.add_job(notify_expiring_assets, "interval", hours=4)
     scheduler.add_job(notify_expiring_documents, "interval", hours=4)
-    scheduler.start()
+    # scheduler.start()

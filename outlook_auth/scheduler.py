@@ -39,4 +39,4 @@ if not any(
         minutes=50,
         id="refresh_outlook_auth_token",
     )
-    scheduler.start()
+    # scheduler.start()

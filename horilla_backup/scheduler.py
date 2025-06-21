@@ -136,7 +136,7 @@ def start_gdrive_backup_job():
 
         # Start the scheduler if it's not already running
         if not scheduler.running:
-            scheduler.start()
+            # scheduler.start()
 
     else:
         stop_gdrive_backup_job()

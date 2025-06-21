@@ -44,4 +44,4 @@ scheduler.add_job(
     cyclic_feedback_creation, cron_trigger, misfire_grace_time=grace_time_seconds
 )
 
-scheduler.start()
+# scheduler.start()
